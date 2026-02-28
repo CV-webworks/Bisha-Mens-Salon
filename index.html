@@ -4,16 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bisha Men's Salon | Premium Barbers in Southgate, North London</title>
-<meta name="description" content="Bisha Men's Salon — Premium authentic Albanian barberhouse in Southgate, North London. Skin fades, beard shaping, hot towel shaves. For gentlemen who know the difference.">
-<meta name="keywords" content="barbers southgate, barber southgate, barber north london, skin fade southgate, Albanian barber london, barber N14, mens salon southgate, best barber southgate">
+<meta name="description" content="Bisha Men's Salon — Premium authentic Albanian barberhouse in Southgate, North London. Skin fades, beard shaping, hot towel shaves.">
+<meta name="keywords" content="barbers southgate, barber southgate, barber north london, skin fade southgate, Albanian barber london, barber N14, mens salon southgate">
 <meta name="geo.region" content="GB-ENF">
 <meta name="geo.placename" content="Southgate, London">
 <meta name="geo.position" content="51.6322;-0.1262">
+<meta name="format-detection" content="telephone=no">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BarberShop","name":"Bisha Men's Salon","image":"https://i.ibb.co/N2KsPdY6/outside-bishas.webp","url":"","telephone":"","address":{"@type":"PostalAddress","streetAddress":"Southgate","addressLocality":"London","addressRegion":"North London","postalCode":"N14","addressCountry":"GB"},"geo":{"@type":"GeoCoordinates","latitude":51.6322,"longitude":-0.1262},"openingHours":["Mo-Sa 09:00-19:00","Su 10:00-16:00"],"priceRange":"££","areaServed":["Southgate","Enfield","Palmers Green","Winchmore Hill","Oakwood","Cockfosters","Arnos Grove","New Southgate"]}
-</script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--black:#111;--charcoal:#1a1a1a;--card:#1f1f1f;--gold:#D4AF37;--gold-light:#e8c94a;--white:#f5f0e8;--grey:#999;--font-head:'Playfair Display',Georgia,serif;--font-body:'Manrope','Helvetica Neue',sans-serif}
@@ -26,11 +24,11 @@ body{font-family:var(--font-body);background:var(--black);color:var(--white);fon
 
 /* NAV */
 nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;transition:all .4s ease}
-nav.scrolled{background:rgba(17,17,17,.92);backdrop-filter:blur(20px);padding:14px 40px;border-bottom:1px solid rgba(212,175,55,.1)}
-nav .logo{font-family:var(--font-head);font-size:22px;font-weight:700;color:var(--white);letter-spacing:3px;text-decoration:none}
+nav.scrolled{background:rgba(17,17,17,.95);backdrop-filter:blur(20px);padding:14px 40px;border-bottom:1px solid rgba(212,175,55,.15)}
+nav .logo{font-family:var(--font-head);font-size:22px;font-weight:700;color:var(--white);letter-spacing:2px;text-decoration:none}
 nav .logo span{color:var(--gold)}
 nav .nav-links{display:flex;gap:32px;list-style:none}
-nav .nav-links a{color:var(--grey);text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;transition:color .3s;position:relative}
+nav .nav-links a{color:var(--grey);text-decoration:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;transition:color .3s;position:relative}
 nav .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
 nav .nav-links a:hover{color:var(--white)}
 nav .nav-links a:hover::after{width:100%}
@@ -39,24 +37,25 @@ nav .nav-links a:hover::after{width:100%}
 .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(4px,5px)}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-5px)}
-.mobile-menu{display:none;position:fixed;inset:0;background:rgba(17,17,17,.97);backdrop-filter:blur(30px);z-index:99;flex-direction:column;justify-content:center;align-items:center;gap:36px;opacity:0;transition:opacity .4s}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(17,17,17,.98);backdrop-filter:blur(30px);z-index:99;flex-direction:column;justify-content:center;align-items:center;gap:36px;opacity:0;transition:opacity .4s}
 .mobile-menu.open{display:flex;opacity:1}
-.mobile-menu a{color:var(--white);text-decoration:none;font-family:var(--font-head);font-size:32px;letter-spacing:2px;transition:color .3s}
+.mobile-menu a{color:var(--white);text-decoration:none;font-family:var(--font-head);font-size:32px;letter-spacing:1px;transition:color .3s}
 .mobile-menu a:hover{color:var(--gold)}
 
 /* HERO */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 24px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.3)}
-.hero-content{position:relative;z-index:2}
-.hero-sub{font-size:13px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;font-weight:400;opacity:0;transform:translateY(20px);animation:fadeUp .8s ease forwards .3s}
-.hero h1{font-family:var(--font-head);font-size:clamp(48px,10vw,100px);font-weight:700;line-height:1;letter-spacing:4px;margin-bottom:8px;opacity:0;transform:translateY(30px);animation:fadeUp .8s ease forwards .5s}
-.hero .slogan{font-family:var(--font-head);font-style:italic;font-size:clamp(16px,2.5vw,22px);color:var(--gold);margin:20px 0 16px;font-weight:400;opacity:0;transform:translateY(20px);animation:fadeUp .8s ease forwards .7s}
-.hero .desc{font-size:15px;color:var(--grey);max-width:520px;line-height:1.8;margin:0 auto 40px;font-weight:300;opacity:0;transform:translateY(20px);animation:fadeUp .8s ease forwards .9s}
-.hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;opacity:0;transform:translateY(20px);animation:fadeUp .8s ease forwards 1.1s}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;font-family:var(--font-body);font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:500;border-radius:0;transition:all .3s;cursor:pointer;border:none}
-.btn-gold{background:var(--gold);color:var(--black)}
-.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,.25)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.35);animation:zoomOut 10s ease-out forwards}
+.hero-content{position:relative;z-index:2;max-width:900px}
+.hero-sub{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;font-weight:600;opacity:0;transform:translateY(20px);animation:fadeUp .8s cubic-bezier(0.2,1,0.2,1) forwards .3s}
+/* UPDATED TITLE STYLING */
+.hero h1{font-family:var(--font-head);font-size:clamp(36px, 6vw, 80px);font-weight:700;line-height:1.1;letter-spacing:1px;margin-bottom:16px;opacity:0;transform:translateY(30px);animation:fadeUp .8s cubic-bezier(0.2,1,0.2,1) forwards .5s; text-transform:uppercase;}
+.hero .slogan{font-family:var(--font-head);font-style:italic;font-size:clamp(18px,2.5vw,24px);color:var(--gold);margin:16px 0;font-weight:400;opacity:0;transform:translateY(20px);animation:fadeUp .8s cubic-bezier(0.2,1,0.2,1) forwards .7s}
+.hero .desc{font-size:15px;color:var(--grey);max-width:520px;line-height:1.8;margin:0 auto 40px;font-weight:300;opacity:0;transform:translateY(20px);animation:fadeUp .8s cubic-bezier(0.2,1,0.2,1) forwards .9s}
+.hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;opacity:0;transform:translateY(20px);animation:fadeUp .8s cubic-bezier(0.2,1,0.2,1) forwards 1.1s}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;font-family:var(--font-body);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:600;transition:all .3s;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:var(--black);box-shadow:0 4px 20px rgba(212,175,55,.15)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,.3)}
 .btn-outline{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.2)}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
 .scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px}
@@ -66,12 +65,11 @@ nav .nav-links a:hover::after{width:100%}
 /* SECTIONS */
 section{padding:120px 24px}
 .container{max-width:1100px;margin:0 auto}
-.section-label{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
-.section-title{font-family:var(--font-head);font-size:clamp(28px,5vw,42px);font-weight:700;margin-bottom:20px;line-height:1.2}
+.section-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600;display:inline-block;border-bottom:1px solid rgba(212,175,55,0.3);padding-bottom:4px}
+.section-title{font-family:var(--font-head);font-size:clamp(32px,5vw,48px);font-weight:700;margin-bottom:20px;line-height:1.2}
 .section-desc{color:var(--grey);font-size:15px;line-height:1.8;max-width:560px;font-weight:300}
 .section-header{text-align:center;margin-bottom:80px}
 .section-header .section-desc{margin:0 auto}
-.gold-line{width:50px;height:1px;background:var(--gold);margin:20px auto 0}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
@@ -79,18 +77,18 @@ section{padding:120px 24px}
 .about-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .4s;transform-origin:left}
 .about-card:hover::before{transform:scaleX(1)}
 .about-card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.15)}
-.about-icon{font-size:28px;margin-bottom:20px;display:block}
+.about-icon{font-size:28px;margin-bottom:20px;display:block;color:var(--gold)}
 .about-card h3{font-family:var(--font-head);font-size:18px;margin-bottom:12px;font-weight:700}
 .about-card p{color:var(--grey);font-size:14px;line-height:1.7;font-weight:300}
 
 /* DIVIDER */
-.divider{position:relative;padding:100px 24px;text-align:center;overflow:hidden}
+.divider{position:relative;padding:120px 24px;text-align:center;overflow:hidden}
 .divider-bg{position:absolute;inset:0}
-.divider-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.2)}
+.divider-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.25)}
 .divider-content{position:relative;z-index:2}
-.divider-content blockquote{font-family:var(--font-head);font-style:italic;font-size:clamp(22px,4vw,34px);line-height:1.5;max-width:700px;margin:0 auto;color:var(--white)}
-.divider-content .stars{color:var(--gold);font-size:20px;margin-top:20px;letter-spacing:4px}
-.divider-content .rating-text{color:var(--grey);font-size:13px;margin-top:8px;letter-spacing:2px}
+.divider-content blockquote{font-family:var(--font-head);font-style:italic;font-size:clamp(24px,4vw,38px);line-height:1.4;max-width:800px;margin:0 auto;color:var(--white)}
+.divider-content .stars{color:var(--gold);font-size:20px;margin-top:24px;letter-spacing:4px}
+.divider-content .rating-text{color:var(--grey);font-size:12px;margin-top:10px;letter-spacing:3px;text-transform:uppercase}
 
 /* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -118,24 +116,27 @@ section{padding:120px 24px}
 .review-date{font-size:11px;color:var(--grey);margin-top:2px}
 
 /* GALLERY */
-.gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin:0;padding:0}
+.gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;padding:0}
 .gallery-row .gal-item{position:relative;aspect-ratio:1;overflow:hidden}
-.gallery-row .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,filter .4s}
-.gallery-row .gal-item:hover img{transform:scale(1.05);filter:brightness(.7)}
+.gallery-row .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease,filter .4s}
+.gallery-row .gal-item:hover img{transform:scale(1.1);filter:brightness(.8)}
 
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.contact-info h3{font-family:var(--font-head);font-size:20px;margin-bottom:24px}
-.contact-detail{margin-bottom:20px}
-.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.contact-detail .value{color:var(--grey);font-size:14px;line-height:1.6}
-.contact-detail .value a{color:var(--grey);text-decoration:none;transition:color .3s}
+.contact-info h3{font-family:var(--font-head);font-size:24px;margin-bottom:32px}
+.contact-detail{margin-bottom:24px;border-left:1px solid rgba(212,175,55,0.2);padding-left:16px}
+.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.contact-detail .value{color:var(--grey);font-size:15px;line-height:1.6}
+.contact-detail .value a{color:var(--white);text-decoration:none;transition:color .3s; font-weight:500;}
 .contact-detail .value a:hover{color:var(--gold)}
-.social-links{display:flex;gap:12px;margin-top:28px}
-.social-link{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border:1px solid rgba(255,255,255,.1);color:var(--white);text-decoration:none;font-size:12px;letter-spacing:1px;text-transform:uppercase;transition:all .3s}
+.social-links{display:flex;gap:12px;margin-top:32px}
+.social-link{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border:1px solid rgba(255,255,255,.1);color:var(--white);text-decoration:none;font-size:12px;letter-spacing:1px;text-transform:uppercase;transition:all .3s}
 .social-link:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
-.contact-form{display:flex;flex-direction:column;gap:16px}
-.contact-form input,.contact-form textarea{background:var(--charcoal);border:1px solid rgba(255,255,255,.06);padding:16px 20px;color:var(--white);font-family:var(--font-body);font-size:14px;font-weight:300;outline:none;transition:border-color .3s;width:100%}
+.map-embed{width:100%;height:300px;border:1px solid rgba(255,255,255,0.1); margin-top:30px; filter: grayscale(100%) invert(92%) contrast(83%); transition: filter 0.3s;}
+.map-embed:hover{filter: grayscale(0%);}
+
+.contact-form{display:flex;flex-direction:column;gap:16px; background:var(--charcoal); padding:40px; border:1px solid rgba(255,255,255,0.04)}
+.contact-form input,.contact-form textarea{background:var(--black);border:1px solid rgba(255,255,255,.06);padding:18px 20px;color:var(--white);font-family:var(--font-body);font-size:14px;font-weight:300;outline:none;transition:border-color .3s;width:100%}
 .contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}
 .contact-form textarea{height:120px;resize:vertical}
 .contact-form .btn{width:100%;justify-content:center}
@@ -143,14 +144,16 @@ section{padding:120px 24px}
 .area-tag{font-size:11px;padding:6px 14px;border:1px solid rgba(255,255,255,.06);color:var(--grey);letter-spacing:1px}
 
 /* FOOTER */
-footer{border-top:1px solid rgba(255,255,255,.04);padding:40px 24px;text-align:center}
-footer p{color:var(--grey);font-size:12px;letter-spacing:1px}
-footer a{color:var(--gold);text-decoration:none}
+footer{border-top:1px solid rgba(255,255,255,.04);padding:60px 24px;text-align:center; background:var(--charcoal)}
+footer p{color:var(--grey);font-size:12px;letter-spacing:1px; margin-bottom:12px;}
+footer a{color:var(--gold);text-decoration:none; transition: color 0.3s}
+footer a:hover{color:var(--white)}
 
 /* ANIMATIONS */
 @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+@keyframes zoomOut{from{transform:scale(1.1)}to{transform:scale(1)}}
 @keyframes scrollPulse{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.4;transform:scaleY(.6)}}
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}.reveal-d4{transition-delay:.4s}.reveal-d5{transition-delay:.5s}
 
 /* MOBILE */
@@ -158,6 +161,7 @@ footer a{color:var(--gold);text-decoration:none}
 nav{padding:16px 20px}nav.scrolled{padding:12px 20px}
 .hamburger{display:flex}nav .nav-links{display:none}
 .hero{padding:100px 20px;min-height:100svh}
+.hero h1{margin-top:10px}
 .about-grid{grid-template-columns:1fr}
 .services-grid{grid-template-columns:1fr}
 .reviews-grid{grid-template-columns:1fr}
@@ -166,6 +170,7 @@ nav{padding:16px 20px}nav.scrolled{padding:12px 20px}
 section{padding:80px 20px}
 .section-header{margin-bottom:48px}
 .social-links{flex-direction:column}
+.contact-form{padding:24px}
 }
 </style>
 </head>
@@ -196,17 +201,17 @@ section{padding:80px 20px}
 <!-- HERO -->
 <header class="hero">
 <div class="hero-bg">
-<!-- 1. OUTSIDE SHOP IMAGE -->
 <img src="https://i.ibb.co/N2KsPdY6/outside-bishas.webp" alt="Bisha Men's Salon Exterior">
 </div>
 <div class="hero-content">
 <p class="hero-sub">Premium Authentic Albanian Barberhouse</p>
-<h1>BISHA</h1>
+<!-- UPDATED HERO TEXT -->
+<h1>BISHA MEN'S SALON</h1>
 <p class="slogan">"For Gentlemen Who Know the Difference"</p>
 <p class="desc">Step into Southgate's finest men's salon. Where traditional Albanian craftsmanship meets modern precision — delivering an experience as sharp as your cut.</p>
 <div class="cta-row">
 <a href="#services" class="btn btn-gold">View Services</a>
-<a href="#contact" class="btn btn-outline">Get in Touch</a>
+<a href="#contact" class="btn btn-outline">Book Now</a>
 </div>
 </div>
 <div class="scroll-indicator">
@@ -218,19 +223,15 @@ section{padding:80px 20px}
 <!-- GALLERY STRIP -->
 <div class="gallery-row">
 <div class="gal-item">
-<!-- 1. OUTSIDE -->
 <img src="https://i.ibb.co/N2KsPdY6/outside-bishas.webp" alt="Bisha Shop Front">
 </div>
 <div class="gal-item">
-<!-- 2. BACKSHOT TRIM -->
 <img src="https://i.ibb.co/q3fggh6k/trim.webp" alt="Master Barber at Work">
 </div>
 <div class="gal-item">
-<!-- 3. KID HAIRCUT -->
 <img src="https://i.ibb.co/4g7qkGH8/kid-bishas.webp" alt="Junior Gent Haircut">
 </div>
 <div class="gal-item">
-<!-- 4. HAIRCUT DETAIL -->
 <img src="https://i.ibb.co/8gDQtGCc/hair-2.jpg" alt="Precision Fade Detail">
 </div>
 </div>
@@ -239,10 +240,9 @@ section{padding:80px 20px}
 <section id="about">
 <div class="container">
 <div class="section-header">
-<p class="section-label reveal">Why Bisha</p>
+<span class="section-label reveal">Why Bisha</span>
 <h2 class="section-title reveal reveal-d1">Crafted With Pride.<br>Delivered With Precision.</h2>
 <p class="section-desc reveal reveal-d2">More than just a haircut — Bisha is a premium grooming experience rooted in authentic Albanian barbering tradition, right here in the heart of Southgate.</p>
-<div class="gold-line reveal reveal-d3"></div>
 </div>
 <div class="about-grid">
 <div class="about-card reveal reveal-d1">
@@ -264,10 +264,9 @@ section{padding:80px 20px}
 </div>
 </section>
 
-<!-- DIVIDER (JUNIOR GENTS TRUST) -->
+<!-- DIVIDER -->
 <div class="divider">
 <div class="divider-bg">
-<!-- KID IMAGE AS BACKGROUND -->
 <img src="https://i.ibb.co/4g7qkGH8/kid-bishas.webp" alt="Kid Haircut at Bisha">
 </div>
 <div class="divider-content reveal">
@@ -281,10 +280,9 @@ section{padding:80px 20px}
 <section id="services">
 <div class="container">
 <div class="section-header">
-<p class="section-label reveal">Services & Pricing</p>
+<span class="section-label reveal">Services & Pricing</span>
 <h2 class="section-title reveal reveal-d1">Premium Grooming.<br>Honest Prices.</h2>
 <p class="section-desc reveal reveal-d2">From skin fades to hot towel shaves, every service at Bisha is carried out with meticulous attention to detail.</p>
-<div class="gold-line reveal reveal-d3"></div>
 </div>
 <div class="services-grid">
 <div class="service-card reveal reveal-d1">
@@ -331,10 +329,9 @@ section{padding:80px 20px}
 <section id="reviews" style="background:var(--charcoal)">
 <div class="container">
 <div class="section-header">
-<p class="section-label reveal">Testimonials</p>
+<span class="section-label reveal">Testimonials</span>
 <h2 class="section-title reveal reveal-d1">What Our Clients Say</h2>
 <p class="section-desc reveal reveal-d2">Don't just take our word for it — hear from the gentlemen who trust Bisha with their look.</p>
-<div class="gold-line reveal reveal-d3"></div>
 </div>
 <div class="reviews-grid">
 <div class="review-card reveal reveal-d1">
@@ -375,13 +372,20 @@ section{padding:80px 20px}
 <section id="contact">
 <div class="container">
 <div class="section-header">
-<p class="section-label reveal">Get In Touch</p>
+<span class="section-label reveal">Get In Touch</span>
 <h2 class="section-title reveal reveal-d1">Visit Us in Southgate</h2>
-<div class="gold-line reveal reveal-d2"></div>
 </div>
 <div class="contact-grid">
 <div class="contact-info reveal">
 <h3>Bisha Men's Salon</h3>
+
+<!-- PHONE NUMBER + BUTTON -->
+<div class="contact-detail">
+<p class="label">Call to Book</p>
+<p class="value" style="font-size:18px; color:var(--gold); font-weight:600">07500 630289</p>
+<a href="tel:07500630289" class="btn btn-gold" style="margin-top:10px; padding:10px 20px; width:auto; display:inline-block">Call Now</a>
+</div>
+
 <div class="contact-detail">
 <p class="label">Location</p>
 <p class="value">Southgate, London, N14</p>
@@ -390,13 +394,24 @@ section{padding:80px 20px}
 <p class="label">Hours</p>
 <p class="value">Mon – Sat: 9am – 7pm<br>Sunday: 10am – 4pm</p>
 </div>
-<div class="contact-detail">
-<p class="label">Email</p>
-<p class="value"><a href="mailto:bishaendri50@gmail.com">bishaendri50@gmail.com</a></p>
-</div>
+
 <div class="social-links">
 <a href="https://www.instagram.com/bisha_mens_salon/" target="_blank" class="social-link">Instagram →</a>
 <a href="https://www.tiktok.com/@bisha_mens_salon" target="_blank" class="social-link">TikTok →</a>
+</div>
+
+<!-- GOOGLE MAPS EMBED -->
+<iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.534246830588!2d-0.1284!3d51.6322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ec8d8eb464b%3A0x629c1945112345!2sSouthgate%2C%20London%20N14!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<form class="contact-form reveal reveal-d2" onsubmit="sendEmail(event)">
+<h4 style="font-family:var(--font-head); color:var(--gold); margin-bottom:10px">Send a Message</h4>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="phone" placeholder="Your Phone (optional)">
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn btn-gold">Send Request</button>
+</form>
 </div>
 <div class="area-tags">
 <span class="area-tag">Southgate</span>
@@ -406,23 +421,15 @@ section{padding:80px 20px}
 <span class="area-tag">Oakwood</span>
 <span class="area-tag">Cockfosters</span>
 <span class="area-tag">Arnos Grove</span>
-<span class="area-tag">New Southgate</span>
-</div>
-</div>
-<form class="contact-form reveal reveal-d2" onsubmit="sendEmail(event)">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<input type="text" name="phone" placeholder="Your Phone (optional)">
-<textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn btn-gold">Send Message</button>
-</form>
+<span class="area-tag">North London</span>
 </div>
 </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2025 Bisha Men's Salon · Southgate, North London · <a href="mailto:bishaendri50@gmail.com">bishaendri50@gmail.com</a></p>
+<p>© 2025 Bisha Men's Salon · Southgate, North London</p>
+<p><a href="tel:07500630289">07500 630289</a> · <a href="mailto:bishaendri50@gmail.com">bishaendri50@gmail.com</a></p>
 </footer>
 
 <script>
@@ -437,10 +444,10 @@ document.getElementById('mobileMenu').classList.toggle('open');
 document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('open')?'hidden':'';
 }
 
-// SCROLL REVEAL
+// SCROLL REVEAL (SMOOTH)
 const observer=new IntersectionObserver((entries)=>{
 entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})
-},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
 // CONTACT FORM
@@ -452,7 +459,7 @@ const email=f.email.value;
 const phone=f.phone.value;
 const msg=f.message.value;
 const body=`Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0A${msg}`;
-window.location.href=`mailto:bishaendri50@gmail.com?subject=Website Enquiry from ${name}&body=${body}`;
+window.location.href=`mailto:bishaendri50@gmail.com?subject=Enquiry from ${name}&body=${body}`;
 f.reset();
 }
 </script>
